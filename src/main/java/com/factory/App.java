@@ -27,7 +27,7 @@ public class App {
 
         manager.addDetails(details);
 
-        System.out.println("----Al----");
+        System.out.println("----All----");
 
         manager.getDetails().forEach(detail -> {
             System.out.println(detail);
