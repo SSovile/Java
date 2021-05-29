@@ -11,7 +11,7 @@ public class Motor extends Detail {
     private int power;
     public Motor(int power) {
         super(DetailType.Nochassis,
-                1 + (int)(Math.random() * ((4000 - 1))));
+                23);
         this.power = power;
     }
 }

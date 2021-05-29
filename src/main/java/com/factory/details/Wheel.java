@@ -11,7 +11,7 @@ public class Wheel extends Detail {
     private int radius;
 
     public Wheel(int radius) {
-        super(DetailType.Chassis, 1 + (int)(Math.random() * ((4000 - 1))));
+        super(DetailType.Chassis, 23);
         this.radius = radius;
     }
 }
