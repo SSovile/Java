@@ -11,8 +11,8 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class Door extends Detail {
     private String type_of_door;
-    private Integer id;
-    public Door() {
-        super(DetailType.Chassis, 23);
+    public Door(String type_of_door) {
+        super(DetailType.Chassis, 1 + (int) (Math.random() * ((4000 - 1))));
+        this.type_of_door = type_of_door;
     }
 }
