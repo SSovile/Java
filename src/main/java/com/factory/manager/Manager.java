@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Data
 public class Manager {
     private List<Detail> details = new ArrayList<>();
-    public void addDetails(List<Detail>details) {
+    public void addDetails(List<Detail> details) {
         this.details.addAll(details);
     }
     public void addDetail(Detail detail) {
@@ -28,8 +28,7 @@ public class Manager {
     public List<Detail> sortBySer_num(Sort order, List<Detail> details) {
         if (order == Sort.ASC) {
             return details.stream().sorted(Comparator.comparing(Detail::getSer_num)).collect(Collectors.toList());
-        }
-        else {
+        } else {
             return details.stream().sorted(Comparator.comparing(Detail::getSer_num).reversed()).collect(Collectors.toList());
         }
     }
